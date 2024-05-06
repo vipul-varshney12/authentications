@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+       /* Add your CSS styles here */
+       .navbar {
+           display: flex;
+           justify-content: space-between; /* Add this line */
+           background-color: #333;
+           color: #fff;
+           padding: 10px;
+       }
+
+       .nav-container {
+           display: flex; /* Add this line */
+           align-items: center; /* Add this line */
+       }
+
+       .nav-item {
+           text-decoration: none;
+           color: #fff;
+           margin: 0 10px;
+       }
+
+       .nav-item:hover {
+           text-decoration: underline;
+       }
+
+       .logout-btn {
+           background-color: #ff5722;
+           color: #fff;
+           border: none;
+           padding: 5px 10px;
+           border-radius: 5px;
+           cursor: pointer;
+       }
+
+       .logout-btn:hover {
+           background-color: #ff7043;
+       }
+   </style>
+</head>
+<body>
+    
+   <nav class="navbar">
+       <div class="nav-container">
+           <a href="#" class="nav-item">Home</a>
+           <a href="#" class="nav-item">Product</a>
+       </div>
+       <form action="/logout" method="get">
+           <input class="nav-item logout-btn" type="submit" value="Logout">
+       </form>
+   </nav>
+   <h1>home  page</h1>
+   <!-- rest of your content -->
+</body>
+</html>
